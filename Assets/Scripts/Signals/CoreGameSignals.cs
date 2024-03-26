@@ -23,6 +23,8 @@ namespace Signals
         #endregion
 
         public UnityAction<byte> onLevelInitialize = delegate {};
+        public UnityAction onLevelSuccessful = delegate {};
+        public UnityAction onLevelFailed = delegate {};
         public UnityAction onClearActiveLevel = delegate {};
         public UnityAction onReset = delegate{};
         public UnityAction onNextLevel = delegate{};

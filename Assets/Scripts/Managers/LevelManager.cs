@@ -97,6 +97,7 @@ namespace Managers
         private void Start()
         {
             CoreGameSignals.Instance.onLevelInitialize?.Invoke((byte)(_currentLevel % totalLevelCount));
+            CoreUISignals.Instance.onOpenPanel(Enums.UIPanelTypes.Start,1);
         }
     }
 }
