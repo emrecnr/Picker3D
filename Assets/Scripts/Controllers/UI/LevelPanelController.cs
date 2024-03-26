@@ -27,7 +27,7 @@ namespace Controllers.UI
 
         private void OnSetStageColor(byte stageValue)
         {
-            stageImages[stageValue].material.DOColor(Color.yellow,.5f);
+            stageImages[stageValue].material.DOColor(Color.yellow,.5f); // 777as7da7sd
 
             
         }
