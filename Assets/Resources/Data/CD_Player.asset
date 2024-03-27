@@ -9,11 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a74228acb12c28b4a901176f366308cf, type: 3}
-  m_Name: CD_Level
+  m_Script: {fileID: 11500000, guid: ff54446f1fa8f2046bfe21caecbbd907, type: 3}
+  m_Name: CD_Player
   m_EditorClassIdentifier: 
-  LevelDatas:
-  - Pools:
-    - RequiredObjectCount: 5
-    - RequiredObjectCount: 10
-    - RequiredObjectCount: 15
+  Data:
+    MeshData:
+      ScaleCounter: 1.2
+    MovementData:
+      ForwardSpeed: 12
+      SidewaySpeed: 6
+    ForceData:
+      ForceParameters:
+        x: 0
+        y: 4.65
+        z: 0.15

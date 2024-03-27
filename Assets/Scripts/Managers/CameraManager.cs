@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
+using Managers;
 using Signals;
 using Unity.Mathematics;
 using UnityEngine;
@@ -42,8 +43,8 @@ public class CameraManager : MonoBehaviour
 
     private void OnSetCameraTarget()
     {
-        //var player = FindObjectOfType<PlayerManager>().transform;
-        //virtualCamera.Follow = player;
+        var player = FindObjectOfType<PlayerManager>().transform;
+        virtualCamera.Follow = player;
         // virtualCamera.LookAt = player;
     }
 

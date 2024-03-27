@@ -1,26 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Extentions;
 using UnityEngine;
 using UnityEngine.Events;
 
 namespace Signals
 {
-    public class CameraSignals : MonoBehaviour
+    public class CameraSignals : MonoSingleton<CameraSignals>
     {
-        #region Singleton
-        public static CameraSignals Instance;
-
-        private void Awake()
-        {
-            if (Instance != null && Instance != this)
-            {
-                Destroy(gameObject);
-                return;
-            }
-
-            Instance = this;
-        }
-        #endregion
     
         public UnityAction onSetCameraTarget = delegate {};
     }

@@ -99,13 +99,13 @@ namespace Managers
                         {
                             _moveVector.x = _inputData.HorizontalInputSpeed / 10f * mouseDeltaPosition.x;
                         }
-                        else if (mouseDeltaPosition.x < _inputData.HorizontalInputSpeed)
+                        else if (mouseDeltaPosition.x < -_inputData.HorizontalInputSpeed)
                         {
-                            _moveVector.x = -_inputData.HorizontalInputSpeed / 10f * mouseDeltaPosition.x;
+                            _moveVector.x = -_inputData.HorizontalInputSpeed / 10f * -mouseDeltaPosition.x;
                         }
                         else
                         {
-                            _moveVector.x = Mathf.SmoothDamp(-_moveVector.x,0,  ref _currentVelocity,_inputData.ClampSpeed);
+                            _moveVector.x = Mathf.SmoothDamp(_moveVector.x,0,  ref _currentVelocity,_inputData.ClampSpeed);
                         }
 
                         _mousePosition = Input.mousePosition;
